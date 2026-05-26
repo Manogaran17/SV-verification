@@ -1,7 +1,5 @@
 `include "interface.sv"
 `include "test.sv"
-
-
 module top_tb;
 
     logic clk;
@@ -10,13 +8,13 @@ module top_tb;
     initial
       begin
 
-        clk = 0;
-        forever #10 clk = ~clk;
+        clk=0;
+        forever #10clk=~clk;
     end
 
     pipo_if vif(clk); 
 
-    pipo_shift_register dut 
+    pipo_shift_register dut
     (
         .clk(clk),
         .rst(vif.rst),
