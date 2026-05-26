@@ -1,4 +1,3 @@
-
 class transaction;
 
     rand bit [3:0] parallel_in;
@@ -8,4 +7,3 @@ class transaction;
     bit [3:0] parallel_out;
 
 endclass
-
